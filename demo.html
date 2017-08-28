@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Demo</title>
+	<link rel="stylesheet" href="css/touch_scale_image.css" type="text/css"/>
+	<script type="text/javascript" src="js/touch_scale_image.js"></script>
+</head>
+<body>
+
+	<ul class="zhengwen">
+        <li><img src="images/photo/1.jpg" /></li>
+        <li><img src="images/photo/2.jpg" /></li>
+	</ul>
+
+
+	<div class="imgscale-pack">
+		<div class="imgscale-close"></div>
+		<div class="imgscale-img">
+			<img src="" />
+		</div>
+	</div>
+
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded", function(event){
+	ImagesZoom.init({
+		"elem": ".zhengwen"
+	});
+}, false);
+
+
+// 如果有引入JQuery 则可以用下面这一段
+// $(window).load(function(){
+// 	ImagesZoom.init({
+// 		"elem": ".zhengwen"
+// 	});
+// });
+
+
+</script>
+
+
+</body>
+</html>
